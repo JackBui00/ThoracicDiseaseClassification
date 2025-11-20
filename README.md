@@ -41,7 +41,7 @@ A PyTorch-based project for classifying thoracic diseases from chest X-ray image
 
 pip install torch torchvision pandas numpy scikit-learn lmdb tqdm pillow matplotlib seaborn opencv-python
 
-text
+
 
 ### 2. Ensure Large Model Files Are Ignored
 
@@ -49,7 +49,7 @@ Create a `.gitignore` file (if not present) containing:
 
 *.pth
 
-text
+
 
 ### 3. Create LMDB Datasets
 
@@ -57,7 +57,7 @@ from your_module import create_lmdb_with_resized_images, ensure_lmdb
 
 ensure_lmdb(train_df, "lmdb_train", image_root, resize=(512, 512))
 
-text
+
 
 ### 4. Training Loop Example
 
@@ -65,7 +65,7 @@ train_dataset = XrayLMDBDatasetWithImages("lmdb_train_512x512", transform=train_
 val_dataset = XrayLMDBDatasetWithImages("lmdb_val_512x512", transform=val_transform)
 Dataloaders, model, optimizer, training loop as described in code
 
-text
+
 
 ---
 
