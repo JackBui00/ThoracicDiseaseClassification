@@ -16,5 +16,4 @@ results/
 *.tar
 *.zip
 data/
-images/
 lmdb_datasets/"*.pth" 
